@@ -16,5 +16,3 @@ responde ao clique do usurário dando um 'ar' de profundidade ao ser acionado, a
 -
     -HTML
     -CSS
-
-## Como utilizar 
