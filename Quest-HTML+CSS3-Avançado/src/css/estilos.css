@@ -1,0 +1,133 @@
+body {
+    background: url('../images/bg-desktop.svg')  hsl(257, 40%, 49%) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 70px 0 50px 300px;
+}
+
+header .logo {
+    max-width: 200px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+main .mockup{
+    max-width: 800px;
+}
+
+main .description-text {
+    padding-top: 25px;
+    max-width:500px ;
+    color: white;
+}
+
+.description-text .title {
+    font-weight: 600;
+    font-size: 40px;
+    padding: 30px 0 20px 0;
+}
+
+.description-text .text {
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.description-text .btn-register {
+    padding: 20px 70px;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    color: hsl(257, 40%, 49%);
+    font-weight: 400;
+    box-shadow: 8px 14px 19px 3px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.btn-register:active {
+    transform: scale(0.95);
+}
+
+.btn-register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 220px;
+    padding-top: 50px;
+}
+
+footer .social i {
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    transition: transform 0.1s ease;
+}
+
+.social i:active {
+    transform: scale(0.95);
+}
+
+.social i:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+
+@media (max-width:425px){
+
+    body{
+        background: url(../images/bg-mobile.svg) hsl(257, 40%, 49%) center no-repeat ;
+        background-size: cover;
+    }
+
+    header {
+        margin:30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    main .mockup {
+        max-width: 350px;
+    }
+
+    .description-text .title {
+        font-size: 25px;
+        padding: 0 70px ;
+    }
+
+    .description-text .text {
+        font-size: 15px;
+        padding: 50px 30px 50px;
+}
+
+    footer {
+        margin: 0;
+        padding: 70px;
+        justify-content: center;
+    }
+}
